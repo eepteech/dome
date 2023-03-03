@@ -1,3 +1,11 @@
+player.onChat("jump", function () {
+    blocks.fill(
+    GRASS,
+    pos(0, 0, 0),
+    pos(10, -10, 10),
+    FillOperation.Replace
+    )
+})
 player.onChat("run", function () {
     shapes.sphere(
     GLOWSTONE,
